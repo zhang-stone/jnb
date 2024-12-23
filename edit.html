@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="edit.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2 id="dialogTitle">添加信息</h2>
+      <button class="close-btn">&times;</button>
+    </div>
+    
+    <div class="form-content">
+      <div class="input-group">
+        <label>姓名</label>
+        <input type="text" id="userName" placeholder="请输入姓名" autocomplete="off">
+      </div>
+      
+      <div class="input-group">
+        <label>身份证号</label>
+        <input type="text" id="idCard" placeholder="请输入身份证号" autocomplete="off">
+      </div>
+      
+      <div class="input-group">
+        <label>手机号</label>
+        <input type="text" id="phone" placeholder="请输入手机号" autocomplete="off">
+      </div>
+
+      <div class="input-group">
+        <label>预约网点（下拉选择不一定会成功）</label>
+        <input type="text" id="appointmentBranch" placeholder="请输入预约网点" autocomplete="off">
+      </div>
+      
+
+      <div class="input-group">
+        <label>预约数量</label>
+        <input type="number" id="appointmentQuantity" placeholder="请输入预约数量" autocomplete="off">
+      </div>
+
+      <div class="button-group">
+        <button id="saveInfo" class="primary-btn">保存</button>
+        <button id="cancelEdit" class="secondary-btn">取消</button>
+      </div>
+    </div>
+  </div>
+  <script src="edit.js"></script>
+</body>
+</html> 

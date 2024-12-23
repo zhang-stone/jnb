@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="drag-handle">
+      <div class="handle-content">
+        <span class="drag-title">纪念币快速预约助手</span>
+        <button id="addNewInfo" class="add-btn">+</button>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="bank-links">
+        <div class="bank-links-header" id="toggleBankLinks">
+          <span>预约链接</span>
+          <span class="toggle-icon">▼</span>
+        </div>
+        <div class="bank-links-content" style="display: none;">
+          <a href="https://apply.95559.com.cn/personbank/commemorativeOrderCoins/index.html#/order" target="_blank">交通银行</a>
+          <a href="https://cmcoins.boc.cn/BOC15_CoinSeller/welcome.html" target="_blank">中国银行</a>
+          <a href="https://eapply.abchina.com/coin/coin/CoinIssuesDistribution?typeid=202307" target="_blank">农业银行</a>
+          <a href="https://static.jnb.icbc.com.cn/ICBC/ICBCCOIN/roccentryPC.html" target="_blank">工商银行</a>
+          <a href="https://ccb.com/cn/jnb/subject/index.html" target="_blank">建设银行</a>
+          <a href="https://mcm.hxb.com.cn/p/coin/coinHomeWeb.html?publish_channel_id=006" target="_blank">华夏银行</a>
+          <a href="https://pbank.psbc.com/perbank/commemorativeCoinMake.gate" target="_blank">储蓄银行</a>
+          <a href="https://upbp.startbank.com.cn/rvccPC/JNB/index.html?channel=07#" target="_blank">苏州银行</a>
+        </div>
+      </div>
+
+      <div class="list-section">
+        <div id="infoList"></div>
+      </div>
+
+      <div class="settings-section">
+        <div class="switch-container">
+          <label class="switch">
+            <input type="checkbox" id="autoVerifyCode">
+            <span class="slider"></span>
+          </label>
+          <span class="switch-label">自动获取验证码</span>
+        </div>
+        
+        <div class="switch-container">
+          <label class="switch">
+            <input type="checkbox" id="autoFill">
+            <span class="slider"></span>
+          </label>
+          <span class="switch-label">自动填充</span>
+        </div>
+      </div>
+
+      <div class="footer">
+        <button id="exportData" class="tool-btn">
+          <span class="icon">↓</span>导出
+        </button>
+        <button id="importData" class="tool-btn">
+          <span class="icon">↑</span>导入
+        </button>
+        <button id="helpBtn" class="tool-btn">
+          <span class="icon">?</span>帮助
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 

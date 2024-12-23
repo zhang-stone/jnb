@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Icons</title>
+</head>
+<body>
+    <script>
+        // 这里粘贴上面的 icon16, icon48, icon128 变量定义
+        
+        function downloadIcon(dataUrl, size) {
+            const link = document.createElement('a');
+            link.download = `icon${size}.png`;
+            link.href = dataUrl;
+            link.click();
+        }
+
+        downloadIcon(icon16, '16');
+        downloadIcon(icon48, '48');
+        downloadIcon(icon128, '128');
+    </script>
+</body>
+</html> 

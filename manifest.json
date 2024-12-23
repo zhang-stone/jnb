@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "纪念币快速预约助手",
+  "version": "1.0",
+  "description": "快速填写纪念币预约表单的 Chrome 扩展",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "纪念币快速预约助手",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "128": "icon.png"
+  },
+  "web_accessible_resources": [{
+    "resources": ["edit.html", "edit.css", "edit.js"],
+    "matches": ["<all_urls>"]
+  }]
+} 
